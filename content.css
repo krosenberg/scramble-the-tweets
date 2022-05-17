@@ -1,0 +1,6 @@
+/* Blurs images in Tweets */
+.scrambled-tweets-enabled
+  article
+  div[style*='background-image']:not([style*='profile_images'], [style*='responsive-web/client-web']) {
+  filter: blur(10px);
+}

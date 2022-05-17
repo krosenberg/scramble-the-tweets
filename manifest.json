@@ -1,0 +1,17 @@
+{
+  "name": "Scramble The Tweets",
+  "description": "Turns tweets into meaningless text to keep you focused at work",
+  "version": "0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*.twitter.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "storage"]
+}
